@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-"""
-contains a function  takes a float 
-multiplier as argument and returns a function 
-that multiplies a float by multiplier.
-"""
-
+'''Task 8's module.
+'''
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    '''creates a multiplier'''
+    '''Creates a multiplier function.
+    '''
     return lambda x: x * multiplier
